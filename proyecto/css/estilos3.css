@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+
+.contenedor{
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+/*////----Cabecera----////*/
+header{
+    width: 100%;
+    height: 100%;
+    background: #16526e; /*color de la cabecera*/
+    
+    align-items: center;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  
+  }
+header .menu nav {
+  max-width: 530px;
+  margin:auto;
+}
+header .menu nav a{
+    
+    color: #fafaf7;/*color del menu*/
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none; /* Elimina la subrayado predeterminado */
+  }
+  
+  /*ESPACIO DEL LOGOE LA PAGINA Y EL BORDE SUPERIOR*/
+.logo{
+    padding:10px ;
+    
+  }
+
+.logo img{
+    width: 150px;/*tamaño del logo*/ 
+    margin-inline: 10px 0;
+  }
+
+   
+  /*COLOR AL PASAR EL MOUSE SOBRE EL TEXTO DE ENLACE*/
+  header .menu nav :hover{
+    color:#37ccd1;
+  }
+   /*////----Fin de Cabecera----////*/
+
+/*////----Banner----////
+.banner{
+  width: 728px;
+  height: 90px;
+  background-image: url(../img/banner-inicio.png);
+  background-position:center;
+  background-size: cover;
+}
+/* Estilos para el banner */
+.banner {
+  padding-top: 20px;
+  background-image: url(../img/banner-inicio.png);
+  width: 100%; /* Ajusta el ancho del banner al 100% del contenedor */
+  height: 90px;/*alto*/
+  overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+}
+
+.banner-image {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
+.banner > div{
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(14, 14, 15, 0.381);*/
+}
+#titulo{ 
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#titulo h2{
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #f1f3f3;
+  padding: 10px 10px;
+  background-color: rgba(12, 11, 11, 0.4);
+  width: 100%;
+  max-width: 728px;
+  text-shadow: 2px 2px 2px #000;
+  
+}
+ /*////----Fin de Banner----////*/
+
+/*////----Bienvenida----////*/
+
+.bienvenida{
+  width: 100%;
+  background-color: #3e606f;
+  margin-top: 2px;
+  color: #ffffff;
+  text-align: center;
+}
+.bienvenida h3{
+  font-size: 22px;
+  padding-top:20px;
+  padding-bottom: 10px;
+}
+.bienvenida p{
+  font-size: 18px;
+  max-width: 370%;
+  margin: auto;
+  padding-bottom:30px;
+  line-height: 1.5em;
+}
+ /*////----Fin de Bienvenida----////*/
+  
+  /*////----Nosotros----////*/
+  .nosotros{
+    padding-bottom: 40px;
+    
+  }/*
+  @media all and (min-width:769px){
+    .nosotros{
+      padding-top: 10px;
+      
+    }
+  }*/
+  .nosotros > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    justify-content: center;
+  }
+  .nosotros figure{
+    width: 100%;
+    max-width: 728px;
+    margin-right: 0px;
+    padding-top: 20px;
+  }
+  .conocenos{
+    padding: 10px 15px;
+    
+    text-align: center;
+  
+    max-width: 400px;
+    
+    border: 0;
+    line-height: 1.5;
+    color: #fff;
+    border-radius: 30px;
+    background-color: rgb(7, 40, 44);
+    box-shadow:
+        inset 2px 2px 3px rgba(137, 35, 35, 0.6),
+        inset -2px -2px 3px rgba(211, 13, 13, 0.6);
+        
+    }
+    
+    .conocenos > h4{
+      padding:10px 10px;
+      border-bottom: 2px solid #a2a2a2;
+      font-size: 16px;
+    }
+    .conocenos > h3{
+      padding:10px 10px;
+      font-size: 20px;
+      color: #d5e1df;
+    }
+    .conocenos > p:nth-child(1){
+      font-size: 18px;
+      color: #f4f1f2;
+      padding:10px 10px;
+    }
+    .conocenos > p:nth-child(2){
+      padding:10px 10px;
+      font-size: 18px;
+      color:#f9f4f4;
+    }
+    .conocenos > p:nth-child(3){
+      padding:10px 10px;
+      font-size: 18px;
+      color:#f9f4f4;
+    }
+    
+    .conocenos a{
+      padding:10px 10px;
+      color:#055c66;
+      font-size: 16px;
+      text-decoration: none; /* Elimina la subrayado predeterminado */
+    }
+    .conocenos a:hover{
+      color:#37ccd1;
+    }
+    .conocenos .sobrenosotros{
+      padding: 10px 10px;
+    }
+   
+    /*////----Fin de Nosotros----////*/
+    /*////----Pie de pagina----////*/
+    
+    .center-footer{
+      background-color: #152d37;
+    }
+    .center-footer h3{
+      color: #7a7a7a;
+      text-align: center;
+
+    }
+    .center-footer .redessociales{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .center-footer .rrss{
+      padding-top: 15px;
+      padding-bottom: 10px;
+      text-align: center;
+      color: #7a7a7a;
+    
+      max-width: 270px;
+      margin: auto;
+    }
+    .center-footer .rrss h4{
+      padding-bottom: 35px;
+      font-size: 18px;
+    }
+    .center-footer .contacto{
+      
+      color: #7a7a7a; /*color del texto*/
+      padding-bottom: 20px; /*espacio inferior*/
+      font-size: 18px;
+      text-align:left; /*texto alineado izquierda*/
+      margin-left: 30px; /*margen izquierda*/
+
+    }
+    .center-footer .contacto ul{
+      list-style: none; /* Elimina la viñeta */
+
+    }
+    .center-footer .contacto a{
+      color: inherit; /* Utiliza el color del texto heredado */
+
+    }
+    .center-footer .contacto a:hover{
+      color:#37ccd1; /*color al pasar raton sobre el elemento*/
+      
+    }
+
+    .bottom-footer{
+      height: 25px; /*altura*/
+      background-color: #193441;
+      color:#f9f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*pagina sobre nosotros*/
+
+    .sobreNosotros .banner {
+      padding: 20px 20px;
+      background-image: url(../img/equipo.png);
+      width: 100%; /* Ajusta el ancho del banner al 100% del contenedor */
+      height: 90px;/*alto*/
+      overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+      background-size: cover;
+     /* background-color: rgba(14, 14, 15, 0.381);*/
+    }
+    .sobreNosotros .banner-image {
+      width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+      height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    }
+    .sobreNosotros .banner #titulo h1{
+      text-transform: uppercase;
+      font-size: 25px;
+      color: #dde8e8;
+      padding: 10px 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+      background-color: rgba(12, 11, 11, 0.4);
+      width: 100%;
+      max-width: 728px;
+      /*border: 1px solid #ccc; /* Establece un borde sólido de color gris */
+     text-shadow: 2px 2px 2px #000; /* Agrega un contorno al texto */
+    }
+    
+    .sobreNosotros .contenedor4{
+      display: flex;
+      
+      justify-content: center; /* Para alinear elementos al centro */
+      margin: 10px;
+      
+      }
+
+    .sobreNosotros .contenedor4 figure{
+        width: 100%;
+        max-width: auto;
+        margin-left: 10px;
+    }
+    .sobreNosotros .contenedor4 figure img{
+        flex: 1;
+        
+        height: auto; /* Mantiene la relación de aspecto */
+        max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+      }
+
+      .sobreNosotros .contenedor4 .nosotros{
+        padding-right: 10px;
+        background-color: #598186;
+        color:rgb(246, 243, 243);
+        text-align: center;
+      }
+      .sobreNosotros .contenedor4 .nosotros h2{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        color: #131314;
+      }
+      .sobreNosotros .contenedor4 .nosotros p{
+        font-size: 16px;
+        color: #ede7e8;
+        padding-bottom: 10px;
+        margin-left: 10px;
+      }
+      .especialistas .banner4{
+        /*background-color: rgba(14, 14, 15, 0.381);*/
+        padding: 20px 20px;
+        background-image: url(../img/especialistas.png);
+        width: 100%; /* Ajusta el ancho del banner al 100% del contenedor */
+        height: 90px;/*alto*/
+        overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+        background-size: cover;
+        
+      }
+      .especialistas .banner4 h1{
+        
+          text-transform: uppercase;
+          font-size: 25px;
+          color: #dde8e8;
+          padding: 10px 10px;
+          padding-right: 10px;
+          padding-left: 10px;
+          background-color: rgba(12, 11, 11, 0.4);
+          width: 100%;
+          max-width: 728px;
+          margin: 0 auto;
+          text-align: center;
+         /* border: 1px solid #ccc; /* Establece un borde sólido de color gris */
+          text-shadow: 2px 2px 2px #000; /* Agrega un contorno al texto */
+      }
+      
+      table{
+        padding: 15px 15px;;
+        margin:0 auto;
+        width: 50%;
+        tr:nth-child(odd) {
+          background-color: #3a98b8; /* pintar filas impares */
+        }
+        th {
+          background-color: #333; /* color de fondo del encabezado */
+          color: white; /* color del texto */
+        }
+         
+      }
+      
+      .contacto .banner3 {
+        padding: 20px 20px;
+        background-image: url(../img/contacto.png);
+        width: 100%; /* Ajusta el ancho del banner al 100% del contenedor */
+        height: 90px;/*alto*/
+        overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+        background-size: cover;
+       /* background-color: rgba(14, 14, 15, 0.381);*/
+      }
+      .contacto .banner3 #titulo h1{
+        text-transform: uppercase;
+        font-size: 25px;
+        color: #dde8e8;
+        padding: 10px 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        background-color: rgba(12, 11, 11, 0.4);
+        width: 100%;
+        max-width: 728px;
+       /* border: 1px solid #ccc; /* Establece un borde sólido de color gris */
+        text-shadow: 2px 2px 2px #000; /* Agrega un contorno al texto */
+      }
+      .contacto form{
+        margin: 0 auto;
+        width: 50%;
+        padding: 10px 10px;
+        background-color:#22838c;
+        color:#fff;
+
+      }
+
+    
+    
+
+    
+      
+      
+    
+
+
+

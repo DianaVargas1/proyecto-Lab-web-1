@@ -1,0 +1,61 @@
+
+  .fondo{
+    background-image: url(../img/clinica2.jpg);
+    background-size: cover; /* Ajusta la imagen al contenedor, recortándola si es necesario */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+  }
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(../img/clinica.jpg);
+    background-size: cover; /* Ajusta la imagen al contenedor, recortándola si es necesario */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Agrega una sombra al contenedor */
+    
+  }
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .form-group input, .form-group textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .form-group textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  .form-group .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .form-group .success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }

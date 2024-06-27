@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sacar Turno Médico</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>Sacar Turno Médico</h2>
+  <form id="turnoForm">
+    <div class="form-group">
+      <label for="especialidad">Especialidad:</label>
+      <select id="especialidad" name="especialidad" onchange="cargarMedicos()">
+        <option value="">Seleccione una especialidad</option>
+        <option value="1">Cardiología</option>
+        <option value="2">Dermatología</option>
+        <!-- Agregar más especialidades según sea necesario -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="medico">Médico:</label>
+      <select id="medico" name="medico" onchange="cargarDiasAtencion()">
+        <option value="">Seleccione un médico</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="obraSocial">Obra Social:</label>
+      <select id="obraSocial" name="obraSocial">
+        <option value="">Seleccione una obra social</option>
+        <option value="1">Obra Social A</option>
+        <option value="2">Obra Social B</option>
+        <!-- Agregar más opciones de obra social según sea necesario -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="diaAtencion">Día de Atención:</label>
+      <select id="diaAtencion" name="diaAtencion" onchange="cargarHorasDisponibles()">
+        <option value="">Seleccione un día</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="hora">Hora:</label>
+      <select id="hora" name="hora">
+        <option value="">Seleccione una hora</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <button type="button" class="submit-button" onclick="sacarTurno()">Sacar Turno</button>
+    </div>
+  </form>
+  <div class="turno-list">
+    <h3>Lista de Turnos:</h3>
+    <ul id="turnoItems">
+      <!-- Aquí se llenarán dinámicamente los turnos -->
+    </ul>
+  </div>
+</div>
+
+<script src="script3.js"></script>
+</body>
+</html>

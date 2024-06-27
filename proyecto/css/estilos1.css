@@ -1,0 +1,280 @@
+/*////----Cabecera----////*/
+header{
+    width: 100%;
+    height: 100px;
+    background: #16526e;
+  }
+header .contenedor{
+    margin: auto;
+  }
+  /*ESPACIO DEL LOGOE LA PAGINA Y EL BORDE SUPERIOR*/
+.logo{
+    padding:10px 0;
+  }
+  /*CENTRAR EL LOGO*/
+.logo img{
+    width: 150px;/*tamaño del logo*/ 
+    /*display: block;*/
+    margin: 5px;
+  }*/
+  
+/*CENTRA LOS MODULOS DE INICIO, SOBRE NOSOTROS, ETC*/
+header .contenedor nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 800px;
+    margin:auto;
+    padding: 20px 0;
+    overflow: hidden;/* Evita que los elementos floten fuera del contenedor */
+  }
+  /*COLOR DEL TEXTO DEL PANEL DE NAVEGACION*/
+  header .contenedor nav a{
+    text-decoration: none;
+    color: #fafaf7;
+  }
+  /*COLOR AL PASAR EL MOUSE SOBRE EL TEXTO DE ENLACE*/
+  header .contenedor nav a:hover{
+    color:#37ccd1;
+  }
+  .logo, .contenedor nav {
+    margin-right: 20px;
+  }
+  /*////----Fin de Cabecera----////*/
+
+/*////----Banner----////*/
+.banner{
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/banner-inicio.jpg);
+    background-position:center;
+    background-size: cover;
+  }
+  .banner > div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(209, 219, 189, 0.5);
+  }
+  #llamada-accion{
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  
+  #llamada-accion h2{
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 115px;
+    padding-bottom: 20px;
+  }
+  #llamada-accion p{
+    font-size: 40px;
+    color: #f1f3f3;
+    padding: 5px 5px;
+    background-color: rgba(12, 11, 11, 0.4);
+    width: 70%;
+    max-width: 470px;
+  }
+  
+  #llamada-accion a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 50px;
+    margin-top: 35px;
+    background-color: rgba(0, 0, 0, 0.47);
+    display: inline-block;
+  }
+  /*////----Fin de Banner----////*/
+
+/*////----Bienvenida----////*/
+
+.bienvenida{
+    width: 100%;
+    background-color: #3e606f;
+    margin-top:2px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .bienvenida h3{
+    font-size: 20px;
+    padding-top:45px;
+    padding-bottom: 35px;
+  }
+  
+  .bienvenida p{
+    max-width: 500px;
+    margin: auto;
+    padding-bottom:60px;
+    line-height: 1.7em;
+  }
+  
+  /*////----Fin de Bienvenida----////*/
+  
+  /*////----Nosotros----////*/
+  .nosotros{
+    padding-bottom: 80px;
+    
+  }
+  
+  @media all and (min-width:769px){
+    .nosotros{
+      padding-top: 80px;
+    }
+  }
+  
+  .nosotros > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    justify-content: center;
+  }
+  
+  .nosotros figure{
+    width: 100%;
+    max-width: 570px;
+  }
+  
+  .nosotros figure img{
+    width: 100%;
+  }
+  
+  .conocenos{
+    padding: 15px 15px;
+    text-align: center;
+  
+    max-width: 400px;
+    
+      border: 0;
+      line-height: 1.5;
+      /*padding: 0 20px;*/
+      font-size: 1rem;
+      
+      color: #fff;
+      /*text-shadow: 1px 1px 1px #b6acac;*/
+      border-radius: 30px;
+      background-color: rgb(7, 40, 44);
+      /*background-image: linear-gradient(
+        to top left,
+        rgba(53, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 30%,
+        rgba(0, 0, 0, 0)
+      );*/
+      box-shadow:
+        inset 2px 2px 3px rgba(137, 35, 35, 0.6),
+        inset -2px -2px 3px rgba(211, 13, 13, 0.6);
+    }
+    
+    /*.styled:hover {
+      background-color: rgb(59, 172, 233);
+    }
+    
+    .styled:active {
+      box-shadow:
+        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }*/
+  }
+  
+  @media all and (min-width:769px){
+    .conocenos{
+      text-align: left;
+      padding-left:30px;
+    }
+    .nosotros figure{
+      margin-right: 440px;
+    }
+  }
+  
+  .conocenos > p:nth-child(1){
+    padding-bottom: 10px;
+    border-bottom: 2px solid #a2a2a2;
+    font-size: 14px;
+  }
+  
+  .conocenos > h3{
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    color: #d5e1df;
+  }
+  
+  .conocenos > p:nth-child(3){
+    font-size: 18px;
+    color: #f4f1f2;
+    padding-bottom: 5px;
+  }
+  
+  .conocenos > p:nth-child(4){
+    padding-bottom: 20px;
+    font-size: 18px;
+    color:#f9f4f4;
+  }
+  .conocenos > p:nth-child(5){
+    padding-bottom: 20px;
+    font-size: 18px;
+    color:#f9f4f4;
+  }
+  
+  .conocenos a{
+    color:#055c66;
+    font-size: 18px;
+  }
+  /*////----Fin de Nosotros----////*/
+  
+  /*////----Pie de pagina----////*/
+  
+  .top-footer{
+    height:25px;
+    background-color: #193441;
+  }
+  /*
+  .center-footer{
+    background-color: #152d37;
+  }
+  
+  .center-footer .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .center-footer .widget{
+    padding-top: 20px;
+    padding-bottom: 35px;
+    text-align: center;
+    color: #7a7a7a;
+  
+    max-width: 270px;
+    margin: auto;
+  }
+  
+  .center-footer .widget h4{
+    padding-bottom: 35px;
+    font-size: 18px;
+  }
+  
+  .center-footer .widget p{
+    font-size: 14px;
+  }
+  
+  .bottom-footer{
+    height: 25px;
+    background-color: #193441;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bottom-footer p{
+    color:#7a7a7a;
+    font-size: 12px;
+  }
+  
+  /*////----Fin de Pie de pagina----////*/

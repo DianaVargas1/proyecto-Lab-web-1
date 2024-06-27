@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+
+.contenedor{
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+/*////----Cabecera----////*/
+header{
+    width: 100%;
+    height: 100%;
+    background: #16526e; /*color de la cabecera*/
+    align-items: center;
+    display:flex;
+    flex-flow: row wrap;/*los elementos flexibles se coloquen en una fila horizontal y que se envuelvan a la siguiente línea si no caben en la fila actual*/
+    justify-content: space-around;/* Distribuye el espacio sobrante entre los elementos flexibles alrededor de ellos */
+  
+  }
+header .menu nav {
+  max-width: 530px;
+  margin:auto;
+}
+header .menu nav ul li a{
+    
+    color: #fafaf7;/*color del texto menu*/
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    display: block;
+  }
+  header .menu nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header .menu nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+ 
+  header .menu nav ul li:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {/*menu desplegable*/
+    display: none;
+    position:absolute;
+    top: 100%;
+    left: 0;
+    background-color:#115069;
+    border: 2px solid #504e4e;
+    
+  }
+  
+  .dropdown-menu li {
+    display: block;
+    
+  }
+  
+  .dropdown-menu li a {
+    padding: 10px 20px;
+    white-space: nowrap;/*para que ocupe una linea*/
+    text-decoration: none;
+    
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #424647;
+    
+  }
+  
+  
+  /*ESPACIO DEL LOGOE LA PAGINA Y EL BORDE SUPERIOR*/
+.logo{
+    padding:15px ;
+   
+  }
+
+.logo img{
+    width: 150px;/*tamaño del logo*/ 
+    margin-inline: 15px;
+  }
+     
+  /*COLOR AL PASAR EL MOUSE SOBRE EL TEXTO DE ENLACE*/
+  header .menu nav :hover{
+    color:#37ccd1;
+  }
+   /*////----Fin de Cabecera----////*/
+
+/*////----Banner----////*/
+
+.banner {
+  padding-top: 20px;
+  background-image: url(../img/banner-inicio.png);
+  width: 100%; /* Ajusta el ancho del banner al 100% del contenedor */
+  height: 90px;/*alto*/
+  overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+
+}
+
+.banner-image {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
+.banner > div{
+  width: 100%;
+  height: 100%;
+  
+}
+#titulo{ 
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#titulo h2{
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #f1f3f3;
+  padding: 10px 10px;
+  background-color: rgba(12, 11, 11, 0.4);
+  width: 100%;
+  max-width: 728px;
+  text-shadow: 2px 2px 2px #000;
+  /*text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;*/
+  
+}
+ /*////----Fin de Banner----////*/
+
+/*////----Bienvenida----////*/
+
+.bienvenida{
+  width: 100%;
+  background-color: #3e606f;
+  margin-top: 2px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: /*contorno del texto*/
+        -1px -1px 0 #333,  
+        1px -1px 0 #333,
+        -1px  1px 0 #333,
+        1px  1px 0 #333;
+}
+.bienvenida h3{
+  font-size: 22px;
+  padding-top:20px;
+  padding-bottom: 10px;
+  
+}
+.bienvenida p{
+  font-size: 18px;
+  max-width: 370%;
+  margin: auto;
+  padding-bottom:30px;
+  line-height: 1.5em;
+}
+.bienvenida .contenedor{
+  padding-left: 85px;
+  padding-right: 85px;
+
+}
+ /*////----Fin de Bienvenida----////*/
+  
+  /*////----Nosotros----////*/
+  .nosotros{
+    padding-bottom: 10px;
+    background-image: url(../img/clinica.jpg);
+    background-size: cover; /* Ajusta la imagen al contenedor, recortándola si es necesario */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    
+  }
+  
+  
+  
+  .nosotros > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 15px;/*espacio superior e inferior*/
+    align-items: center;/*alinear elementos*/
+  }
+  .nosotros figure{
+    width: 100%;
+    max-width: 728px;
+    margin-right: 0px;
+    
+    
+  }
+  .nosotros video{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Agrega una sombra al contenedor */
+    /*box-shadow establece la sombra del contenedor.
+      0 0 indica que la sombra no se desplaza horizontal ni verticalmente.
+      20px define el radio de desenfoque de la sombra.
+      rgba(0, 0, 0, 0.5) especifica el color de la sombra. */
+  }
+  .conocenos{
+    padding: 10px 15px 15px 10px;
+    text-align: center;
+    max-width: 400px;
+    border: 0;
+    line-height: 1.5;
+    color: #fff;
+    border-radius: 30px;
+    background-color:#115069;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Agrega una sombra al contenedor */
+          
+    }
+    
+    .conocenos > h4{
+      padding:10px 10px;
+      border-bottom: 2px solid #a2a2a2;
+      font-size: 16px;
+    }
+    .conocenos > h3{
+      padding:10px 10px;
+      font-size: 20px;
+      color: #d5e1df;
+      text-shadow: /*contorno del texto*/
+        -1px -1px 0 #333,  
+        1px -1px 0 #333,
+        -1px  1px 0 #333,
+        1px  1px 0 #333;
+    }
+    .conocenos > p:nth-child(1){
+      font-size: 18px;
+      color: #f4f1f2;
+      padding:10px 10px;
+    }
+    .conocenos > p:nth-child(2){
+      padding:10px 10px;
+      font-size: 18px;
+      color:#f9f4f4;
+    }
+    .conocenos > p:nth-child(3){
+      padding:10px 10px;
+      font-size: 18px;
+      color:#f9f4f4;
+    }
+    
+    .conocenos a{
+      padding:10px 10px;
+      color:#e9eff0;
+      font-size: 16px;
+      text-decoration: none; /* Elimina la subrayado predeterminado */
+    }
+    .conocenos a:hover{
+      color:#37ccd1;
+    }
+    .conocenos .sobrenosotros{
+      padding: 10px 10px;
+      background-color: #333;/*color del botón*/
+    }
+    
+    /*////----Pie de pagina----////*/
+    
+    .center-footer{
+      background-color: #152d37;
+    }
+    .center-footer h3{
+      color: #7a7a7a;
+      text-align: center;
+
+    }
+    .center-footer .redessociales{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .center-footer .rrss{
+      padding-top: 15px;/*espacio superior*/
+      padding-bottom: 10px;/*espacio inferior*/
+      text-align: center;
+      color: #7a7a7a;
+    
+      max-width: 270px;
+      margin: auto;
+    }
+    .center-footer .rrss h4{
+      padding-bottom: 35px;
+      font-size: 18px;
+    }
+    .center-footer .contacto{
+      
+      color: #7a7a7a; /*color del texto*/
+      padding-bottom: 20px; /*espacio inferior*/
+      font-size: 18px;
+      text-align:left; /*texto alineado izquierda*/
+      margin-left: 30px; /*margen izquierda*/
+
+    }
+    .center-footer .contacto ul{
+      list-style: none; /* Elimina la viñeta */
+
+    }
+    .center-footer .contacto a{
+      color: inherit; /* Utiliza el color del texto heredado */
+
+    }
+    .center-footer .contacto a:hover{
+      color:#37ccd1; /*color al pasar raton sobre el elemento*/
+      
+    }
+
+    .bottom-footer{
+      height: 25px; /*altura*/
+      background-color: #193441;
+      color:#f9f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*pagina sobre nosotros*/
+
+    .sobreNosotros .banner {
+      padding: 20px 20px;
+      background-image: url(../img/equipo.png);
+      width: 100%; /* Ajusta el ancho del banner al 100% del contenedor */
+      height: 90px;/*alto*/
+      overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+      background-size: cover;
+     /* background-color: rgba(14, 14, 15, 0.381);*/
+    }
+    .sobreNosotros .banner-image {
+      width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+      height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    }
+    .sobreNosotros .banner #titulo h1{
+      text-transform: uppercase;/* Convierte todo el texto del elemento a mayúsculas */
+      font-size: 28px;
+      color: #f3f7f7;
+      padding: 10px 10px 10px 10px;
+      background-color: rgba(12, 11, 11, 0.4);
+      width: 100%;
+      max-width: 728px;
+      /*border: 1px solid #ccc; /* Establece un borde sólido de color gris */
+     text-shadow: 2px 2px 2px #000; /* Agrega un contorno al texto */
+    /* text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;*/
+
+    }
+    
+    .sobreNosotros .contenedor4{
+      display: flex;
+      
+      justify-content: center; /* Para alinear elementos al centro */
+      margin: 10px;
+      
+      }
+
+    .sobreNosotros .contenedor4 figure{
+        width: 100%;
+        max-width: auto;
+        margin-left: 10px;
+    }
+    .sobreNosotros .contenedor4 figure img{
+        flex: 1;
+        
+        height: auto; /* Mantiene la relación de aspecto */
+        max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+      }
+
+      .sobreNosotros .contenedor4 .nosotros2{
+        padding-right: 10px;
+        background-color: #598186;
+        color:rgb(14, 12, 12);
+        text-align: center;
+        /*text-shadow: /*contorno del texto
+        -1px -1px 0 #080808,  
+        1px -1px 0 #080808,
+        -1px  1px 0 #080808,
+        1px  1px 0 #080808;*/
+        -webkit-text-fill-color: #000;
+      }
+      .sobreNosotros .contenedor4 .nosotros2 h2{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        color: #131314;
+      }
+      .sobreNosotros .contenedor4 .nosotros2 p{
+        font-size: 16px;
+        color: #ede7e8;
+        padding-bottom: 10px;
+        margin-left: 10px;
+      }
+      
+      .especialistas .banner4{
+        /*background-color: rgba(14, 14, 15, 0.381);*/
+        padding: 20px 20px;
+        background-image: url(../img/especialistas.png);
+        width: 100%; /* Ajusta el ancho del banner al 100% del contenedor */
+        height: 90px;/*alto*/
+        overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+        background-size: cover;
+        
+      }
+      .especialistas .banner4 h1{
+        
+          text-transform: uppercase;
+          font-size: 25px;
+          color: #dde8e8;
+          padding: 10px 10px;
+          padding-right: 10px;
+          padding-left: 10px;
+          background-color: rgba(12, 11, 11, 0.4);
+          width: 100%;
+          max-width: 728px;
+          margin: 0 auto;
+          text-align: center;
+         /* border: 1px solid #ccc; /* Establece un borde sólido de color gris */
+          text-shadow: 2px 2px 2px #000; /* Agrega un contorno al texto */
+      }
+      
+      table{
+        padding: 15px 15px;;
+        margin:0 auto;
+        width: 50%;
+        tr:nth-child(odd) {
+          background-color: #3a98b8; /* pintar filas impares */
+        }
+        th {
+          background-color: #333; /* color de fondo del encabezado */
+          color: white; /* color del texto */
+        }
+         
+      }
+      
+      .contacto .banner3 {
+        padding: 20px 20px;
+        background-image: url(../img/contacto.png);
+        width: 100%; /* Ajusta el ancho del banner al 100% del contenedor */
+        height: 90px;/*alto*/
+        overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+        background-size: cover;
+       /* background-color: rgba(14, 14, 15, 0.381);*/
+      }
+      .contacto .banner3 #titulo h1{
+        text-transform: uppercase;
+        font-size: 25px;
+        color: #dde8e8;
+        padding: 10px 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        background-color: rgba(12, 11, 11, 0.4);
+        width: 100%;
+        max-width: 728px;
+       /* border: 1px solid #ccc; /* Establece un borde sólido de color gris */
+        text-shadow: 2px 2px 2px #000; /* Agrega un contorno al texto */
+      }
+      
+      .volver {
+        text-align: left;
+        padding-top: 10px;
+        
+      }
+      .volver a{
+        position: absolute; /* Posicionamiento absoluto */
+        color: #424647;
+        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; /* Contorno blanco */
+        font-size: 14px;
+        text-decoration: none;
+        margin: 30px;
+        margin-top: 10px;
+        text-align: justify; /* Alineación justificada */
+        text-align-last: center; /* Alineación al centro si no alcanza la línea */
+        
+      }
+         /*formulario de contacto*/
+    /*  .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        
+      }*/
+      .form-container .contact-form{
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        
+      }
+      /*sacar turno web*/
+      .fondo{
+        background-image: url(../img/clinica2.jpg);
+        background-size: cover; /* Ajusta la imagen al contenedor, recortándola si es necesario */
+        background-position: center; /* Centra la imagen dentro del contenedor */
+      }
+          .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url(../img/clinica.jpg);
+           background-size: cover; /* Ajusta la imagen al contenedor, recortándola si es necesario */
+           background-position: center; /* Centra la imagen dentro del contenedor */
+           box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Agrega una sombra al contenedor */
+    
+          }
+          
+          .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+          }
+          
+          .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+          
+          .form-group select {
+            width: calc(100% - 12px);
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+          
+          .form-group .submit-button {
+            background-color: #152d37;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          .turno-list {
+            margin-top: 30px;
+          }
+          
+          .turno-list h3 {
+            margin-bottom: 10px;
+          }
+          
+          .turno-list ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          
+          .turno-list ul li {
+            margin-bottom: 5px;
+          }
+          
+      
